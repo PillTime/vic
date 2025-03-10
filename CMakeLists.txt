@@ -9,5 +9,4 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 project(vic)
 add_compile_options(-Wall -Wextra -Wpedantic -Werror)
 
-add_subdirectory(shd)
 add_subdirectory(src)
