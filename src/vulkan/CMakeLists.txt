@@ -1,0 +1,5 @@
+add_library(_vic_vulkan_instance instance.c)
+target_link_libraries(_vic_vulkan_instance _vic_utils vulkan)
+
+add_library(_vic_vulkan INTERFACE)
+target_link_libraries(_vic_vulkan INTERFACE _vic_vulkan_instance)
